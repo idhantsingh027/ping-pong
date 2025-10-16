@@ -1,12 +1,12 @@
 import pygame
+import sys
 from game.game_engine import GameEngine
 
-# Initialize pygame/Start application
 pygame.init()
 
 # Screen dimensions
 WIDTH, HEIGHT = 800, 600
-SCREEN = pygame.display.set_mode((WIDTH, HEIGHT))
+screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Ping Pong - Pygame Version")
 
 # Colors
@@ -15,27 +15,24 @@ BLACK = (0, 0, 0)
 
 # Clock
 clock = pygame.time.Clock()
-FPS = 60
 
-# Game loop
-engine = GameEngine(WIDTH, HEIGHT)
+# Game instance
+game = GameEngine(WIDTH, HEIGHT)
 
+# Main loop
 def main():
-    running = True
-    while running:
-        SCREEN.fill(BLACK)
+    while True:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
-                running = False
+                pygame.quit()
+                sys.exit()
 
-        engine.handle_input()
-        engine.update()
-        engine.render(SCREEN)
+        game.handle_input()
+        game.update()
+        game.render(screen)
 
         pygame.display.flip()
-        clock.tick(FPS)
-
-    pygame.quit()
+        clock.tick(60)
 
 if __name__ == "__main__":
     main()
