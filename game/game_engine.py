@@ -54,7 +54,7 @@ class GameEngine:
 
     def check_game_over(self):
         if self.player_score >= 5:
-            self.display_winner("Player Wins!")
+            self.display_winner("Idhant Wins!")
             self.game_over = True
         elif self.ai_score >= 5:
             self.display_winner("AI Wins!")
