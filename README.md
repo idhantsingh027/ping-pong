@@ -25,15 +25,17 @@ cd ping-pong
 ### **2️⃣ Set Up Virtual Environment (Optional)**
 Create and activate a virtual environment to manage project dependencies.
 
+```
+python -m venv venv    # Windows/macOS/Linux
+```
+
 **On Windows:**
 ```
-python -m venv venv
 .\venv\Scripts\activate
 ```
 
 **On macOS / Linux:**
 ```
-python3 -m venv venv
 source venv/bin/activate
 ```
 
