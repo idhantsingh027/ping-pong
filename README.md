@@ -9,7 +9,7 @@ A simple real-time Ping Pong game built using Python and Pygame.
 - "Idhant Wins!" message on player victory
 
 ### **Controls:**
-- Player Paddle: Up (W) / Down (S) arrow keys
+- Player Paddle: Up (W) / Down (S) keys
 - Quit Game: ESC key
 
 ---
@@ -22,7 +22,7 @@ git clone https://github.com/idhantsingh027/ping-pong.git
 cd ping-pong
 ```
 
-### **2️⃣ Set Up Virtual Environment**
+### **2️⃣ Set Up Virtual Environment (Optional)**
 Create and activate a virtual environment to manage project dependencies.
 
 **On Windows:**
